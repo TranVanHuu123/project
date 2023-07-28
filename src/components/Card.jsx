@@ -1,4 +1,5 @@
 import { useState } from "react";
+import iconcheck from "../assets/images/check.png";
 
 const Card = ({ shoes, handleAddToCart }) => {
   const [click, setClick] = useState(true);
@@ -36,7 +37,7 @@ const Card = ({ shoes, handleAddToCart }) => {
             </button>
           ) : (
             <div className="flex items-center justify-center w-10 h-10 rounded-full bg-Yellow">
-              <img className="w-8 h-8" src="/check.png" alt=""></img>
+              <img className="w-8 h-8" src={iconcheck} alt=""></img>
             </div>
           )}
         </div>

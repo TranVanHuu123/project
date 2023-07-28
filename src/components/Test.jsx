@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addPost, removeProduct } from "../redux/showReducer";
 import Card from "./Card";
-
+import iconNike from "../assets/images/nike.png";
 const Test = () => {
   const shoes = useSelector((state) => state.shoes.shoesList);
   const cartItems = useSelector((state) => state.shoes.cartItems);
@@ -78,7 +78,7 @@ function ProdustList({ shoes, click, handleAddToCart }) {
       <div className="fixed z-10 flex w-full p-3 overflow-hidden ">
         <div className="">
           <img
-            src="./nike.png"
+            src={iconNike}
             alt="img"
             className="object-cover w-16 h-10"
           ></img>
@@ -112,7 +112,7 @@ function ItermCarts({
       <div className="z-10 flex items-center justify-between w-full p-3 overflow-hidden ">
         <div className="">
           <img
-            src="./nike.png"
+            src={iconNike}
             alt="img"
             className="object-cover w-16 h-10"
           ></img>
