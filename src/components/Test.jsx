@@ -78,7 +78,7 @@ function ProdustList({ shoes, click, handleAddToCart }) {
       <div className="fixed z-10 flex w-full p-3 overflow-hidden ">
         <div className="">
           <img
-            src="/nike.png"
+            src="./nike.png"
             alt="img"
             className="object-cover w-16 h-10"
           ></img>
@@ -112,7 +112,7 @@ function ItermCarts({
       <div className="z-10 flex items-center justify-between w-full p-3 overflow-hidden ">
         <div className="">
           <img
-            src="/nike.png"
+            src="./nike.png"
             alt="img"
             className="object-cover w-16 h-10"
           ></img>
@@ -153,7 +153,7 @@ function ItermCarts({
                       onClick={() => handleDecreaseQuantity(item.id)}
                       className="w-10 h-10 flex justify-center items-center rounded-full bg-[#eaeaea]"
                     >
-                      <img className="w-6 h-6" alt="" src="/minus.png"></img>
+                      <img className="w-6 h-6" alt="" src="./minus.png"></img>
                     </button>
                     <span className="text-xl font-bold">
                       {quantityMap[item.id] || 1}
@@ -162,14 +162,14 @@ function ItermCarts({
                       onClick={() => handleIncreaseQuantity(item.id)}
                       className="w-10 h-10 flex justify-center items-center rounded-full bg-[#eaeaea]"
                     >
-                      <img className="w-6 h-6" alt="" src="/plus.png"></img>
+                      <img className="w-6 h-6" alt="" src="./plus.png"></img>
                     </button>
                   </div>
                   <button
                     onClick={() => handleRemoveItem(item.id)}
                     className="flex items-center justify-center w-10 h-10 rounded-full bg-Yellow"
                   >
-                    <img className="w-6 h-6" alt="" src="/trash.png"></img>
+                    <img className="w-6 h-6" alt="" src="./trash.png"></img>
                   </button>
                 </div>
               </div>
